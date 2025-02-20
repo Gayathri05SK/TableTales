@@ -1,7 +1,8 @@
 const express = require("express");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
-const User = require("C:/Users/ADMIN/Documents/SEM-6/CC LAB/Restaurant/backend/models/user.js");
+const path = require("path");
+const User = require(path.join(__dirname, "../models/User"));
 
 const router = express.Router();
 
